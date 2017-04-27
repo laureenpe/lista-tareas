@@ -78,12 +78,13 @@ function ingreseTarea () {
     this.completed = completed,
     this.ingreseDato = function () {
       var nuevoTitulo = this.title
-      resultado.push(resultado)
+      resultado.push(this)
     }
   }
 
-  var nuevoIngreso = new newTitle('title')
-  nuevoIngreso.ingreseDato()
+  var nuevoIngreso = new newTitle("title");
+  nuevoIngreso.ingreseDato();
+  javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0
 }
 
 console.log(resultado)
