@@ -1,1 +1,4 @@
-javascript2.js
+function newElement() {
+}
+
+
