@@ -1,4 +1,5 @@
-var res = [
+var res =  {
+    "search_results": [
   {
     "userId": 1,
     "id": 1,
@@ -1199,4 +1200,24 @@ var res = [
     "title": "ipsam aperiam voluptates qui",
     "completed": false
   }
-] ;
+] 
+}
+
+
+
+
+res.search_results.forEach(function(el) {
+
+    document.write(
+
+        "<div>" +
+
+        "<p> <strong> User Id :</strong>" + el.userId + "</p>" +
+
+        "<p>  Id: " + el.id + "<br>" + "<p> Titulo : " +  el.title+  + "</p>" + "<br>" + el.completed + "<br>" + "</p>" +
+
+        "</div>"
+
+    )
+})
+
