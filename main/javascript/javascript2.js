@@ -1,9 +1,9 @@
 function ingreseTarea(){
     var input = document.getElementById("tarea");
 
-   var contRut = document.getElementsByClassName("i-list");
+   var contenedor = document.getElementsByClassName("i-list");
 
-   contRut[0].innerHTML += input.value +"<br>";
+   contenedor[0].innerHTML += "<li>"+ input.value + "<br>";
 
-   input.value = "";
+   input.value = " ";
 }
