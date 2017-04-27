@@ -6,4 +6,5 @@ function ingreseTarea(){
    contenedor[0].innerHTML += "<li>"+ input.value + "<br>";
 
    input.value = " ";
+
 }

@@ -1,5 +1,4 @@
-var res =  {
-    "search_results": [
+var resultado =   [
   {
     "userId": 1,
     "id": 1,
@@ -61,14 +60,43 @@ var res =  {
     "completed": true
   }
 ] 
-}
 
 
 
 
-res.search_results.forEach(function(el) {
+
+resultado.forEach(function(el) {
    
 
-    document.write( "<li>" + el.title + "</li>")
+    document.write( "<li>" +"<strong>" + "Titulo : " + "</strong>" + el.title + "</li>")
 })
 
+
+function ingreseTarea(){
+    var input = document.getElementById("tarea");
+
+   var contenedor = document.getElementsByClassName("i-list");
+
+   contenedor[0].innerHTML += "<li>"+ input.value + "<br>";
+
+   input.value = " ";
+   
+
+}
+
+function newTitle(userId, id, title, completed){
+    this.userId = userId,
+    this.id = id,
+    this.title = title,
+    this.completed = completed,
+    this.ingreseDato = function(){
+        var nuevoTitulo = this.title;
+        resultado.push(resultado);
+    }
+}
+
+var nuevoIngreso = new newTitle("title");
+    nuevoIngreso.ingreseDato();
+
+
+console.log(resultado);
