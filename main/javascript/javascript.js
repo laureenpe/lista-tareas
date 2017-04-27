@@ -78,7 +78,7 @@ function ingreseTarea () {
     this.completed = completed,
     this.ingreseDato = function () {
       var nuevoTitulo = this.title
-      resultado.push(this)
+      resultado.push(this);
     }
   }
 
